@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.env
+.venv
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Package files
+*.egg-info/
+dist/
+build/
+
+# Testing
+.coverage
+.pytest_cache/
+.tox/
+
+# Alembic
+alembic/versions/*.pyc
+
+# Local development
+.env.local
+.env.development
+.env.test

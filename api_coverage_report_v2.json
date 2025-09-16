@@ -1,0 +1,647 @@
+{
+  "required_count": 76,
+  "code_paths_count": 95,
+  "collection_paths_count": 85,
+  "required": [
+    {
+      "endpoint": "/api/v1/auth/register",
+      "normalized": "/api/v1/auth/register",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/auth/login",
+      "normalized": "/api/v1/auth/login",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/auth/logout",
+      "normalized": "/api/v1/auth/logout",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/auth/refresh",
+      "normalized": "/api/v1/auth/refresh",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "normalized": "/api/v1/auth/me",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/auth/me",
+      "normalized": "/api/v1/auth/me",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/auth/change-password",
+      "normalized": "/api/v1/auth/change-password",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/auth/forgot-password",
+      "normalized": "/api/v1/auth/forgot-password",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/auth/reset-password",
+      "normalized": "/api/v1/auth/reset-password",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/users/",
+      "normalized": "/api/v1/users",
+      "in_code": true,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/users/{id}",
+      "normalized": "/api/v1/users/{id}",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/projects/",
+      "normalized": "/api/v1/projects",
+      "in_code": true,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/projects/{id}",
+      "normalized": "/api/v1/projects/{id}",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/projects/{id}/stats",
+      "normalized": "/api/v1/projects/{id}/stats",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/projects/{id}/team",
+      "normalized": "/api/v1/projects/{id}/team",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/projects/{id}/team/{user_id}",
+      "normalized": "/api/v1/projects/{id}/team/{user_id}",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/projects/{id}/status",
+      "normalized": "/api/v1/projects/{id}/status",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/projects/{id}/timeline",
+      "normalized": "/api/v1/projects/{id}/timeline",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/requirements/",
+      "normalized": "/api/v1/requirements",
+      "in_code": true,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/requirements/{id}",
+      "normalized": "/api/v1/requirements/{id}",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/requirements/project/{project_id}",
+      "normalized": "/api/v1/requirements/project/{project_id}",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/requirements/{id}/analyze",
+      "normalized": "/api/v1/requirements/{id}/analyze",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/requirements/analyze",
+      "normalized": "/api/v1/requirements/analyze",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/requirements/{id}/generate-tasks",
+      "normalized": "/api/v1/requirements/{id}/generate-tasks",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/requirements/{id}/status",
+      "normalized": "/api/v1/requirements/{id}/status",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/requirements/{id}/history",
+      "normalized": "/api/v1/requirements/{id}/history",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/requirements/{id}/approve",
+      "normalized": "/api/v1/requirements/{id}/approve",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/requirements/{id}/reject",
+      "normalized": "/api/v1/requirements/{id}/reject",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/tasks/",
+      "normalized": "/api/v1/tasks",
+      "in_code": true,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/tasks/{id}",
+      "normalized": "/api/v1/tasks/{id}",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/tasks/{id}/status",
+      "normalized": "/api/v1/tasks/{id}/status",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/tasks/{id}/start",
+      "normalized": "/api/v1/tasks/{id}/start",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/tasks/{id}/complete",
+      "normalized": "/api/v1/tasks/{id}/complete",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/tasks/{id}/pause",
+      "normalized": "/api/v1/tasks/{id}/pause",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/tasks/{id}/resume",
+      "normalized": "/api/v1/tasks/{id}/resume",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/tasks/{id}/comments",
+      "normalized": "/api/v1/tasks/{id}/comments",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/tasks/{id}/comments/{comment_id}",
+      "normalized": "/api/v1/tasks/{id}/comments/{comment_id}",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/tasks/{id}/assign",
+      "normalized": "/api/v1/tasks/{id}/assign",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/tasks/{id}/unassign",
+      "normalized": "/api/v1/tasks/{id}/unassign",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/tasks/{id}/time-logs",
+      "normalized": "/api/v1/tasks/{id}/time-logs",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/tasks/{id}/attachments",
+      "normalized": "/api/v1/tasks/{id}/attachments",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/agents/",
+      "normalized": "/api/v1/agents",
+      "in_code": true,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/agents/{id}",
+      "normalized": "/api/v1/agents/{id}",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/agents/{id}/execute",
+      "normalized": "/api/v1/agents/{id}/execute",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/agents/{id}/start",
+      "normalized": "/api/v1/agents/{id}/start",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/agents/{id}/stop",
+      "normalized": "/api/v1/agents/{id}/stop",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/agents/{id}/actions",
+      "normalized": "/api/v1/agents/{id}/actions",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/agents/actions/{action_id}",
+      "normalized": "/api/v1/agents/actions/{action_id}",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/agents/actions/{action_id}/approve",
+      "normalized": "/api/v1/agents/actions/{action_id}/approve",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/agents/actions/{action_id}/reject",
+      "normalized": "/api/v1/agents/actions/{action_id}/reject",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/agents/actions/{action_id}/retry",
+      "normalized": "/api/v1/agents/actions/{action_id}/retry",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/agents/analytics/overview",
+      "normalized": "/api/v1/agents/analytics/overview",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/agents/analytics/performance",
+      "normalized": "/api/v1/agents/analytics/performance",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/integrations/",
+      "normalized": "/api/v1/integrations",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/integrations/{id}",
+      "normalized": "/api/v1/integrations/{id}",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/integrations/{id}/test",
+      "normalized": "/api/v1/integrations/{id}/test",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/integrations/{id}/sync",
+      "normalized": "/api/v1/integrations/{id}/sync",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/integrations/{id}/logs",
+      "normalized": "/api/v1/integrations/{id}/logs",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/integrations/{id}/enable",
+      "normalized": "/api/v1/integrations/{id}/enable",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/integrations/{id}/disable",
+      "normalized": "/api/v1/integrations/{id}/disable",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/integrations/types",
+      "normalized": "/api/v1/integrations/types",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/integrations/{id}/webhook",
+      "normalized": "/api/v1/integrations/{id}/webhook",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/integrations/deployments/",
+      "normalized": "/api/v1/integrations/deployments",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/integrations/deployments/{id}",
+      "normalized": "/api/v1/integrations/deployments/{id}",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/integrations/deployments/{id}/rollback",
+      "normalized": "/api/v1/integrations/deployments/{id}/rollback",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/integrations/deployments/{id}/promote",
+      "normalized": "/api/v1/integrations/deployments/{id}/promote",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/dashboard/overview",
+      "normalized": "/api/v1/dashboard/overview",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/dashboard/stats",
+      "normalized": "/api/v1/dashboard/stats",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/dashboard/metrics",
+      "normalized": "/api/v1/dashboard/metrics",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/dashboard/activity-feed",
+      "normalized": "/api/v1/dashboard/activity-feed",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/search/",
+      "normalized": "/api/v1/search",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/audit/logs/",
+      "normalized": "/api/v1/audit/logs",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/admin/health/",
+      "normalized": "/api/v1/admin/health",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/files/upload/",
+      "normalized": "/api/v1/files/upload",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/permissions/",
+      "normalized": "/api/v1/permissions",
+      "in_code": false,
+      "in_collection": false
+    },
+    {
+      "endpoint": "/api/v1/reports/",
+      "normalized": "/api/v1/reports",
+      "in_code": false,
+      "in_collection": false
+    }
+  ],
+  "code_only": [
+    "/api/v1/",
+    "/api/v1/actions/{action_id}",
+    "/api/v1/actions/{action_id}/approve",
+    "/api/v1/actions/{action_id}/reject",
+    "/api/v1/actions/{action_id}/retry",
+    "/api/v1/activity-feed",
+    "/api/v1/agents",
+    "/api/v1/analytics/overview",
+    "/api/v1/analytics/performance",
+    "/api/v1/analytics/trends",
+    "/api/v1/backup",
+    "/api/v1/bulk-upload",
+    "/api/v1/change-password",
+    "/api/v1/deployments",
+    "/api/v1/deployments/environments",
+    "/api/v1/deployments/{deployment_id}",
+    "/api/v1/deployments/{deployment_id}/logs",
+    "/api/v1/deployments/{deployment_id}/promote",
+    "/api/v1/deployments/{deployment_id}/restart",
+    "/api/v1/deployments/{deployment_id}/rollback",
+    "/api/v1/deployments/{deployment_id}/status",
+    "/api/v1/forgot-password",
+    "/api/v1/generate",
+    "/api/v1/global",
+    "/api/v1/health",
+    "/api/v1/login",
+    "/api/v1/logout",
+    "/api/v1/logs",
+    "/api/v1/logs/{log_id}",
+    "/api/v1/me",
+    "/api/v1/metrics/automation",
+    "/api/v1/metrics/projects",
+    "/api/v1/overview",
+    "/api/v1/project/{project_id}",
+    "/api/v1/projects",
+    "/api/v1/refresh",
+    "/api/v1/register",
+    "/api/v1/requirements",
+    "/api/v1/reset-password",
+    "/api/v1/restore",
+    "/api/v1/roles",
+    "/api/v1/roles/{role_id}",
+    "/api/v1/schedule",
+    "/api/v1/scheduled",
+    "/api/v1/security-events",
+    "/api/v1/settings",
+    "/api/v1/system-events",
+    "/api/v1/system-status",
+    "/api/v1/task/{task_id}",
+    "/api/v1/tasks",
+    "/api/v1/templates",
+    "/api/v1/types",
+    "/api/v1/upload",
+    "/api/v1/user-activity",
+    "/api/v1/user/{user_id}",
+    "/api/v1/users",
+    "/api/v1/version",
+    "/api/v1/{agent_id}",
+    "/api/v1/{agent_id}/actions",
+    "/api/v1/{agent_id}/configure",
+    "/api/v1/{agent_id}/execute",
+    "/api/v1/{agent_id}/logs",
+    "/api/v1/{agent_id}/metrics",
+    "/api/v1/{agent_id}/start",
+    "/api/v1/{agent_id}/stop",
+    "/api/v1/{file_id}",
+    "/api/v1/{file_id}/download",
+    "/api/v1/{integration_id}",
+    "/api/v1/{integration_id}/disable",
+    "/api/v1/{integration_id}/enable",
+    "/api/v1/{integration_id}/logs",
+    "/api/v1/{integration_id}/sync",
+    "/api/v1/{integration_id}/test",
+    "/api/v1/{integration_id}/webhook",
+    "/api/v1/{project_id}",
+    "/api/v1/{project_id}/stats",
+    "/api/v1/{project_id}/status",
+    "/api/v1/{project_id}/team",
+    "/api/v1/{project_id}/team/{user_id}",
+    "/api/v1/{project_id}/timeline",
+    "/api/v1/{report_id}",
+    "/api/v1/{requirement_id}",
+    "/api/v1/{requirement_id}/analyze",
+    "/api/v1/{requirement_id}/generate-tasks",
+    "/api/v1/{task_id}",
+    "/api/v1/{task_id}/assign",
+    "/api/v1/{task_id}/comments",
+    "/api/v1/{task_id}/comments/{comment_id}",
+    "/api/v1/{task_id}/complete",
+    "/api/v1/{task_id}/pause",
+    "/api/v1/{task_id}/resume",
+    "/api/v1/{task_id}/start",
+    "/api/v1/{task_id}/status",
+    "/api/v1/{task_id}/unassign",
+    "/api/v1/{user_id}"
+  ],
+  "collection_only": [
+    "/{{base_url}}{{api_version}}/admin/health",
+    "/{{base_url}}{{api_version}}/agents",
+    "/{{base_url}}{{api_version}}/agents/actions/{{action_id}}",
+    "/{{base_url}}{{api_version}}/agents/actions/{{action_id}}/approve",
+    "/{{base_url}}{{api_version}}/agents/actions/{{action_id}}/reject",
+    "/{{base_url}}{{api_version}}/agents/actions/{{action_id}}/retry",
+    "/{{base_url}}{{api_version}}/agents/analytics/overview",
+    "/{{base_url}}{{api_version}}/agents/analytics/performance",
+    "/{{base_url}}{{api_version}}/agents/templates",
+    "/{{base_url}}{{api_version}}/agents/{{agent_id}}",
+    "/{{base_url}}{{api_version}}/agents/{{agent_id}}/actions",
+    "/{{base_url}}{{api_version}}/agents/{{agent_id}}/configure",
+    "/{{base_url}}{{api_version}}/agents/{{agent_id}}/execute",
+    "/{{base_url}}{{api_version}}/agents/{{agent_id}}/logs",
+    "/{{base_url}}{{api_version}}/agents/{{agent_id}}/metrics",
+    "/{{base_url}}{{api_version}}/agents/{{agent_id}}/start",
+    "/{{base_url}}{{api_version}}/agents/{{agent_id}}/stop",
+    "/{{base_url}}{{api_version}}/audit/logs",
+    "/{{base_url}}{{api_version}}/auth/change-password",
+    "/{{base_url}}{{api_version}}/auth/forgot-password",
+    "/{{base_url}}{{api_version}}/auth/login",
+    "/{{base_url}}{{api_version}}/auth/logout",
+    "/{{base_url}}{{api_version}}/auth/me",
+    "/{{base_url}}{{api_version}}/auth/refresh",
+    "/{{base_url}}{{api_version}}/auth/register",
+    "/{{base_url}}{{api_version}}/auth/reset-password",
+    "/{{base_url}}{{api_version}}/dashboard/activity-feed",
+    "/{{base_url}}{{api_version}}/dashboard/metrics",
+    "/{{base_url}}{{api_version}}/dashboard/overview",
+    "/{{base_url}}{{api_version}}/dashboard/stats",
+    "/{{base_url}}{{api_version}}/files/upload",
+    "/{{base_url}}{{api_version}}/integrations",
+    "/{{base_url}}{{api_version}}/integrations/deployments",
+    "/{{base_url}}{{api_version}}/integrations/deployments/environments",
+    "/{{base_url}}{{api_version}}/integrations/deployments/{{integration_id}}",
+    "/{{base_url}}{{api_version}}/integrations/deployments/{{integration_id}}/logs",
+    "/{{base_url}}{{api_version}}/integrations/deployments/{{integration_id}}/promote",
+    "/{{base_url}}{{api_version}}/integrations/deployments/{{integration_id}}/restart",
+    "/{{base_url}}{{api_version}}/integrations/deployments/{{integration_id}}/rollback",
+    "/{{base_url}}{{api_version}}/integrations/deployments/{{integration_id}}/status",
+    "/{{base_url}}{{api_version}}/integrations/types",
+    "/{{base_url}}{{api_version}}/integrations/{{integration_id}}",
+    "/{{base_url}}{{api_version}}/integrations/{{integration_id}}/disable",
+    "/{{base_url}}{{api_version}}/integrations/{{integration_id}}/enable",
+    "/{{base_url}}{{api_version}}/integrations/{{integration_id}}/logs",
+    "/{{base_url}}{{api_version}}/integrations/{{integration_id}}/sync",
+    "/{{base_url}}{{api_version}}/integrations/{{integration_id}}/test",
+    "/{{base_url}}{{api_version}}/integrations/{{integration_id}}/webhook",
+    "/{{base_url}}{{api_version}}/permissions",
+    "/{{base_url}}{{api_version}}/projects",
+    "/{{base_url}}{{api_version}}/projects/{{project_id}}",
+    "/{{base_url}}{{api_version}}/projects/{{project_id}}/stats",
+    "/{{base_url}}{{api_version}}/projects/{{project_id}}/status",
+    "/{{base_url}}{{api_version}}/projects/{{project_id}}/team",
+    "/{{base_url}}{{api_version}}/projects/{{project_id}}/team/{{user_id}}",
+    "/{{base_url}}{{api_version}}/projects/{{project_id}}/timeline",
+    "/{{base_url}}{{api_version}}/reports",
+    "/{{base_url}}{{api_version}}/requirements",
+    "/{{base_url}}{{api_version}}/requirements/analyze",
+    "/{{base_url}}{{api_version}}/requirements/project/{{project_id}}",
+    "/{{base_url}}{{api_version}}/requirements/{{requirement_id}}",
+    "/{{base_url}}{{api_version}}/requirements/{{requirement_id}}/analyze",
+    "/{{base_url}}{{api_version}}/requirements/{{requirement_id}}/approve",
+    "/{{base_url}}{{api_version}}/requirements/{{requirement_id}}/generate-tasks",
+    "/{{base_url}}{{api_version}}/requirements/{{requirement_id}}/history",
+    "/{{base_url}}{{api_version}}/requirements/{{requirement_id}}/reject",
+    "/{{base_url}}{{api_version}}/requirements/{{requirement_id}}/status",
+    "/{{base_url}}{{api_version}}/search/?q=example",
+    "/{{base_url}}{{api_version}}/tasks",
+    "/{{base_url}}{{api_version}}/tasks/{{task_id}}",
+    "/{{base_url}}{{api_version}}/tasks/{{task_id}}/assign",
+    "/{{base_url}}{{api_version}}/tasks/{{task_id}}/attachments",
+    "/{{base_url}}{{api_version}}/tasks/{{task_id}}/attachments/{{attachment_id}}",
+    "/{{base_url}}{{api_version}}/tasks/{{task_id}}/comments",
+    "/{{base_url}}{{api_version}}/tasks/{{task_id}}/comments/{{comment_id}}",
+    "/{{base_url}}{{api_version}}/tasks/{{task_id}}/complete",
+    "/{{base_url}}{{api_version}}/tasks/{{task_id}}/pause",
+    "/{{base_url}}{{api_version}}/tasks/{{task_id}}/resume",
+    "/{{base_url}}{{api_version}}/tasks/{{task_id}}/start",
+    "/{{base_url}}{{api_version}}/tasks/{{task_id}}/status",
+    "/{{base_url}}{{api_version}}/tasks/{{task_id}}/time-logs",
+    "/{{base_url}}{{api_version}}/tasks/{{task_id}}/time-logs/{{log_id}}",
+    "/{{base_url}}{{api_version}}/tasks/{{task_id}}/unassign",
+    "/{{base_url}}{{api_version}}/users",
+    "/{{base_url}}{{api_version}}/users/{{user_id}}"
+  ]
+}
