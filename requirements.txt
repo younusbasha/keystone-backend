@@ -51,3 +51,26 @@ gunicorn==23.0.0
 # Monitoring & Logging
 structlog==24.4.0
 sentry-sdk==2.20.0
+
+# Additional Production Dependencies
+markdown-it-py>=4.0.0    # For rich text processing
+rich>=14.0.0             # Enhanced terminal output
+python-json-logger>=2.0.0 # JSON logging for production
+prometheus-client>=0.20.0 # Metrics collection
+opentelemetry-api>=1.20.0 # Observability
+opentelemetry-sdk>=1.20.0
+opentelemetry-instrumentation-fastapi>=0.40.0
+
+# File Processing
+Pillow>=10.0.0           # Image processing
+python-magic>=0.4.27     # File type detection
+aiofiles>=23.0.0         # Async file operations
+
+# Data Export
+openpyxl>=3.1.0          # Excel export
+reportlab>=4.0.0         # PDF generation
+python-docx>=1.1.0       # Word document processing
+
+# Additional Security
+python-owasp-zap-v2.4>=0.0.21  # Security scanning
+bandit>=1.7.0            # Security linting
