@@ -28,6 +28,8 @@ MANIFEST
 venv/
 ENV/
 env/
+
+# Environment Variables (keep .env.example)
 .env
 
 # IDE
@@ -36,9 +38,11 @@ env/
 *.swp
 *.swo
 
-# Database
-*.sqlite3
+# Database - Keep your project databases but exclude temporary ones
 *.db-journal
+*.db-wal
+*.db-shm
+# Keep keystone.db and techsophy_keystone.db (they are your project databases)
 
 # Logs
 *.log
@@ -56,3 +60,15 @@ htmlcov/
 # Temporary files
 *.tmp
 *.temp
+
+# Temporary test and debug scripts (keep only essential ones)
+fix_*.py
+github_push*.py
+diagnose*.py
+*_push.py
+*_fix.py
+quick_*.py
+ultimate_*.py
+branch_*.py
+git_*.py
+force_*.py
